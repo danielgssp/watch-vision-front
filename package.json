@@ -1,10 +1,18 @@
 {
   "name": "watch-vision-front",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^4.4.2",
+    "@material-ui/icons": "^4.4.1",
+    "material-ui": "^0.20.2",
+    "lodash": "^4.17.15",
+    "moment": "^2.24.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
+    "react-router-dom": "^5.0.1",
+    "react-star-ratings": "^2.3.0",
+    "react-lottie": "^1.2.3",
     "react-scripts": "3.1.1"
   },
   "scripts": {
