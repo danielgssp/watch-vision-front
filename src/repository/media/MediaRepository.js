@@ -1,19 +1,17 @@
-const url = "http://192.168.0.101:4000";
+import Endpoints from "../constants/Endpoints";
+import { headers } from "../default/SourcesHttp";
 
 export const getMedia = () => {
-  return fetch(`${url}/listMedia`)
+  return fetch(Endpoints.LIST_MEDIA)
     .then(response => response.json())
     .then(data => data)
     .catch(error => console.error(error));
 };
 
 export const sendMedia = media => {
-  return fetch(`${url}/create`, {
+  return fetch(Endpoints.CREATE_MEDIA, {
     method: "POST",
-    headers: {
-      Accept: "application/json",
-      "Content-Type": "application/json"
-    },
+    headers,
     body: JSON.stringify(media)
   })
     .then(function(response) {
